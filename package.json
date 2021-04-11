@@ -8,6 +8,8 @@
   "scripts": {
     "prepare": "husky install",
     "commit": "npx cz",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0 -s && npm run version",
+    "version": "npm version patch",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
