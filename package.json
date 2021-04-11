@@ -1,6 +1,6 @@
 {
   "name": "edu-test-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "一个使用nest.js+typescript 搭建的教育测试 RESTful API 应用",
   "author": "997132391@qq.com",
   "private": false,
