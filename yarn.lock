@@ -734,6 +734,14 @@
     "tslib" "2.1.0"
     "uuid" "8.3.2"
 
+"@nestjs/jwt@^7.2.0":
+  "integrity" "sha1-1V0VyGGz4NZ6hSy+YTGxTIUkaFI="
+  "resolved" "https://registry.npm.taobao.org/@nestjs/jwt/download/@nestjs/jwt-7.2.0.tgz"
+  "version" "7.2.0"
+  dependencies:
+    "@types/jsonwebtoken" "8.5.0"
+    "jsonwebtoken" "8.5.1"
+
 "@nestjs/passport@^7.1.5":
   "integrity" "sha1-sy/ASSAI1z665DJ/vAASpzioNmQ="
   "resolved" "https://registry.npm.taobao.org/@nestjs/passport/download/@nestjs/passport-7.1.5.tgz"
@@ -963,6 +971,13 @@
   "resolved" "https://registry.npm.taobao.org/@types/json5/download/@types/json5-0.0.29.tgz"
   "version" "0.0.29"
 
+"@types/jsonwebtoken@*", "@types/jsonwebtoken@8.5.0":
+  "integrity" "sha1-JTHV4wCAOqYyebIywBSs94DJgcU="
+  "resolved" "https://registry.npm.taobao.org/@types/jsonwebtoken/download/@types/jsonwebtoken-8.5.0.tgz?cache=0&sync_timestamp=1615911717052&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fjsonwebtoken%2Fdownload%2F%40types%2Fjsonwebtoken-8.5.0.tgz"
+  "version" "8.5.0"
+  dependencies:
+    "@types/node" "*"
+
 "@types/mime@^1":
   "integrity" "sha1-k+Jb+e51/g/YC1lLxP6w6GIRG1o="
   "resolved" "https://registry.npm.taobao.org/@types/mime/download/@types/mime-1.3.2.tgz?cache=0&sync_timestamp=1613379303907&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fmime%2Fdownload%2F%40types%2Fmime-1.3.2.tgz"
@@ -973,12 +988,7 @@
   "resolved" "https://registry.npm.taobao.org/@types/minimist/download/@types/minimist-1.2.1.tgz?cache=0&sync_timestamp=1613379305770&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fminimist%2Fdownload%2F%40types%2Fminimist-1.2.1.tgz"
   "version" "1.2.1"
 
-"@types/node@*":
-  "integrity" "sha1-o92NpOuEqZbDbjMd+Y2Cq9drUW4="
-  "resolved" "https://registry.npm.taobao.org/@types/node/download/@types/node-14.14.37.tgz?cache=0&sync_timestamp=1616803652202&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-14.14.37.tgz"
-  "version" "14.14.37"
-
-"@types/node@^13.9.1":
+"@types/node@*", "@types/node@^13.9.1":
   "integrity" "sha1-RqPfcYrtUhcnfyOVpoLgVaSH40E="
   "resolved" "https://registry.npm.taobao.org/@types/node/download/@types/node-13.13.48.tgz?cache=0&sync_timestamp=1616803652202&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-13.13.48.tgz"
   "version" "13.13.48"
@@ -992,6 +1002,15 @@
   "integrity" "sha1-L4u0QUNNFjs1+4/9zNcTiSf/uMA="
   "resolved" "https://registry.npm.taobao.org/@types/parse-json/download/@types/parse-json-4.0.0.tgz?cache=0&sync_timestamp=1613379435727&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fparse-json%2Fdownload%2F%40types%2Fparse-json-4.0.0.tgz"
   "version" "4.0.0"
+
+"@types/passport-jwt@^3.0.5":
+  "integrity" "sha1-uwtBITDyc5vCIxgGNCldjW92ffQ="
+  "resolved" "https://registry.npm.taobao.org/@types/passport-jwt/download/@types/passport-jwt-3.0.5.tgz"
+  "version" "3.0.5"
+  dependencies:
+    "@types/express" "*"
+    "@types/jsonwebtoken" "*"
+    "@types/passport-strategy" "*"
 
 "@types/passport-local@^1.0.33":
   "integrity" "sha1-0kW2DFuAHLOuyh/6tVfV/hU0Jg0="
@@ -1718,6 +1737,11 @@
   "version" "2.1.1"
   dependencies:
     "node-int64" "^0.4.0"
+
+"buffer-equal-constant-time@1.0.1":
+  "integrity" "sha1-+OcRMvf/5uAaXJaXpMbz5I1cyBk="
+  "resolved" "https://registry.npm.taobao.org/buffer-equal-constant-time/download/buffer-equal-constant-time-1.0.1.tgz"
+  "version" "1.0.1"
 
 "buffer-from@^1.0.0", "buffer-from@1.x":
   "integrity" "sha1-MnE7wCj3XAL9txDXx7zsHyxgcO8="
@@ -2537,6 +2561,13 @@
   dependencies:
     "jsbn" "~0.1.0"
     "safer-buffer" "^2.1.0"
+
+"ecdsa-sig-formatter@1.0.11":
+  "integrity" "sha1-rg8PothQRe8UqBfao86azQSJ5b8="
+  "resolved" "https://registry.npm.taobao.org/ecdsa-sig-formatter/download/ecdsa-sig-formatter-1.0.11.tgz"
+  "version" "1.0.11"
+  dependencies:
+    "safe-buffer" "^5.0.1"
 
 "ee-first@1.1.1":
   "integrity" "sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0="
@@ -4567,6 +4598,22 @@
     "jsonparse" "^1.2.0"
     "through" ">=2.2.7 <3"
 
+"jsonwebtoken@^8.2.0", "jsonwebtoken@8.5.1":
+  "integrity" "sha1-AOceC431TCEhofJhN98igGc7zA0="
+  "resolved" "https://registry.npm.taobao.org/jsonwebtoken/download/jsonwebtoken-8.5.1.tgz"
+  "version" "8.5.1"
+  dependencies:
+    "jws" "^3.2.2"
+    "lodash.includes" "^4.3.0"
+    "lodash.isboolean" "^3.0.3"
+    "lodash.isinteger" "^4.0.4"
+    "lodash.isnumber" "^3.0.3"
+    "lodash.isplainobject" "^4.0.6"
+    "lodash.isstring" "^4.0.1"
+    "lodash.once" "^4.0.0"
+    "ms" "^2.1.1"
+    "semver" "^5.6.0"
+
 "jsprim@^1.2.2":
   "integrity" "sha1-MT5mvB5cwG5Di8G3SZwuXFastqI="
   "resolved" "https://registry.npm.taobao.org/jsprim/download/jsprim-1.4.1.tgz"
@@ -4576,6 +4623,23 @@
     "extsprintf" "1.3.0"
     "json-schema" "0.2.3"
     "verror" "1.10.0"
+
+"jwa@^1.4.1":
+  "integrity" "sha1-dDwymFy56YZVUw1TZBtmyGRbA5o="
+  "resolved" "https://registry.npm.taobao.org/jwa/download/jwa-1.4.1.tgz"
+  "version" "1.4.1"
+  dependencies:
+    "buffer-equal-constant-time" "1.0.1"
+    "ecdsa-sig-formatter" "1.0.11"
+    "safe-buffer" "^5.0.1"
+
+"jws@^3.2.2":
+  "integrity" "sha1-ABCZ82OUaMlBQADpmZX6UvtHgwQ="
+  "resolved" "https://registry.npm.taobao.org/jws/download/jws-3.2.2.tgz"
+  "version" "3.2.2"
+  dependencies:
+    "jwa" "^1.4.1"
+    "safe-buffer" "^5.0.1"
 
 "kind-of@^3.0.2", "kind-of@^3.0.3", "kind-of@^3.2.0":
   "integrity" "sha1-MeohpzS6ubuw8yRm2JOupR5KPGQ="
@@ -4724,6 +4788,36 @@
   dependencies:
     "p-locate" "^5.0.0"
 
+"lodash.includes@^4.3.0":
+  "integrity" "sha1-YLuYqHy5I8aMoeUTJUgzFISfVT8="
+  "resolved" "https://registry.npm.taobao.org/lodash.includes/download/lodash.includes-4.3.0.tgz"
+  "version" "4.3.0"
+
+"lodash.isboolean@^3.0.3":
+  "integrity" "sha1-bC4XHbKiV82WgC/UOwGyDV9YcPY="
+  "resolved" "https://registry.npm.taobao.org/lodash.isboolean/download/lodash.isboolean-3.0.3.tgz"
+  "version" "3.0.3"
+
+"lodash.isinteger@^4.0.4":
+  "integrity" "sha1-YZwK89A/iwTDH1iChAt3sRzWg0M="
+  "resolved" "https://registry.npm.taobao.org/lodash.isinteger/download/lodash.isinteger-4.0.4.tgz"
+  "version" "4.0.4"
+
+"lodash.isnumber@^3.0.3":
+  "integrity" "sha1-POdoEMWSjQM1IwGsKHMX8RwLH/w="
+  "resolved" "https://registry.npm.taobao.org/lodash.isnumber/download/lodash.isnumber-3.0.3.tgz"
+  "version" "3.0.3"
+
+"lodash.isplainobject@^4.0.6":
+  "integrity" "sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs="
+  "resolved" "https://registry.npm.taobao.org/lodash.isplainobject/download/lodash.isplainobject-4.0.6.tgz"
+  "version" "4.0.6"
+
+"lodash.isstring@^4.0.1":
+  "integrity" "sha1-1SfftUVuynzJu5XV2ur4i6VKVFE="
+  "resolved" "https://registry.npm.taobao.org/lodash.isstring/download/lodash.isstring-4.0.1.tgz"
+  "version" "4.0.1"
+
 "lodash.map@^4.5.1":
   "integrity" "sha1-dx7Hg540c9nEzeKLGTlMNWL09tM="
   "resolved" "https://registry.npm.taobao.org/lodash.map/download/lodash.map-4.6.0.tgz"
@@ -4733,6 +4827,11 @@
   "integrity" "sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4="
   "resolved" "https://registry.npm.taobao.org/lodash.memoize/download/lodash.memoize-4.1.2.tgz"
   "version" "4.1.2"
+
+"lodash.once@^4.0.0":
+  "integrity" "sha1-DdOXEhPHxW34gJd9UEyI+0cal6w="
+  "resolved" "https://registry.npm.taobao.org/lodash.once/download/lodash.once-4.1.1.tgz"
+  "version" "4.1.1"
 
 "lodash.toarray@^4.4.0":
   "integrity" "sha1-JMS/zWsvuji/0FlNsRedjptlZWE="
@@ -5454,6 +5553,14 @@
   "resolved" "https://registry.npm.taobao.org/pascalcase/download/pascalcase-0.1.1.tgz"
   "version" "0.1.1"
 
+"passport-jwt@^4.0.0":
+  "integrity" "sha1-fwvnupQuKLn10iwuu7jOlu988GU="
+  "resolved" "https://registry.npm.taobao.org/passport-jwt/download/passport-jwt-4.0.0.tgz"
+  "version" "4.0.0"
+  dependencies:
+    "jsonwebtoken" "^8.2.0"
+    "passport-strategy" "^1.0.0"
+
 "passport-local@^1.0.0":
   "integrity" "sha1-H+YyaMkudWBmJkN+O5BmYsFbpu4="
   "resolved" "https://registry.npm.taobao.org/passport-local/download/passport-local-1.0.0.tgz"
@@ -5461,7 +5568,7 @@
   dependencies:
     "passport-strategy" "1.x.x"
 
-"passport-strategy@1.x.x":
+"passport-strategy@^1.0.0", "passport-strategy@1.x.x":
   "integrity" "sha1-tVOaqPwiWj0a0XlHbd8ja0QPUuQ="
   "resolved" "https://registry.npm.taobao.org/passport-strategy/download/passport-strategy-1.0.0.tgz"
   "version" "1.0.0"
@@ -6029,10 +6136,10 @@
   dependencies:
     "tslib" "^1.9.0"
 
-"safe-buffer@^5.0.1":
-  "integrity" "sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY="
-  "resolved" "https://registry.npm.taobao.org/safe-buffer/download/safe-buffer-5.2.1.tgz"
-  "version" "5.2.1"
+"safe-buffer@^5.0.1", "safe-buffer@~5.1.0", "safe-buffer@~5.1.1", "safe-buffer@5.1.2":
+  "integrity" "sha1-mR7GnSluAxN0fVm9/St0XDX4go0="
+  "resolved" "https://registry.npm.taobao.org/safe-buffer/download/safe-buffer-5.1.2.tgz"
+  "version" "5.1.2"
 
 "safe-buffer@^5.1.0":
   "integrity" "sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY="
@@ -6043,11 +6150,6 @@
   "integrity" "sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY="
   "resolved" "https://registry.npm.taobao.org/safe-buffer/download/safe-buffer-5.2.1.tgz"
   "version" "5.2.1"
-
-"safe-buffer@~5.1.0", "safe-buffer@~5.1.1", "safe-buffer@5.1.2":
-  "integrity" "sha1-mR7GnSluAxN0fVm9/St0XDX4go0="
-  "resolved" "https://registry.npm.taobao.org/safe-buffer/download/safe-buffer-5.1.2.tgz"
-  "version" "5.1.2"
 
 "safe-buffer@~5.2.0":
   "integrity" "sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY="
@@ -6112,6 +6214,11 @@
   "version" "1.0.0"
 
 "semver@^5.5.0":
+  "integrity" "sha1-qVT5Ma66UI0we78Gnv8MAclhFvc="
+  "resolved" "https://registry.npm.taobao.org/semver/download/semver-5.7.1.tgz?cache=0&sync_timestamp=1616463641178&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemver%2Fdownload%2Fsemver-5.7.1.tgz"
+  "version" "5.7.1"
+
+"semver@^5.6.0":
   "integrity" "sha1-qVT5Ma66UI0we78Gnv8MAclhFvc="
   "resolved" "https://registry.npm.taobao.org/semver/download/semver-5.7.1.tgz?cache=0&sync_timestamp=1616463641178&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemver%2Fdownload%2Fsemver-5.7.1.tgz"
   "version" "5.7.1"
