@@ -1,9 +1,10 @@
-import { Controller, Get } from '@nestjs/common';
-import { Public } from 'src/auth/jwt-auth.guard';
+import { Controller, Get, Query, Res, UseGuards } from '@nestjs/common';
+import { JwtAuthGuard, Public } from 'src/auth/jwt-auth.guard';
+import { httpResponse } from 'src/utils/http.helper';
 import { User } from './user.entity';
 import { UsersService } from './users.service';
 
-@Controller('users')
+@Controller('user')
 export class UsersController {
   constructor(private usersService: UsersService) {}
 
@@ -13,9 +14,15 @@ export class UsersController {
     return this.usersService.userTest();
   }
 
-  @Public()
   @Get('all')
   getAllUsers(): Promise<User[]> {
     return this.usersService.findAll();
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Get('profile')
+  async getProfile(@Query() {}, @Res() res) {
+    const user = {};
+    httpResponse(res, user, 0, '获取用户信息成功');
   }
 }
