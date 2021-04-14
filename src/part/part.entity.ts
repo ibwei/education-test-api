@@ -1,4 +1,5 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
+import { Question } from '../question/question.entity';
 
 @Entity('part')
 export class Part {
@@ -68,4 +69,10 @@ export class Part {
 
   @Column()
   updated_at: string;
+
+  @OneToMany(
+    () => Question,
+    question => question.part,
+  )
+  question: Question[];
 }

@@ -1,16 +1,8 @@
-import {
-  Controller,
-  Get,
-  Post,
-  Res,
-  UseGuards,
-  UsePipes,
-} from '@nestjs/common';
+import { Controller, Get, Post, Res, UsePipes } from '@nestjs/common';
 import { AppService } from './app.service';
 import { AuthService } from './auth/auth.service';
 import { Public } from './auth/jwt-auth.guard';
 import { httpResponse } from './utils/http.helper';
-import { AuthGuard } from '@nestjs/passport';
 import { Query } from '@nestjs/common';
 import { ValidationPipe } from './utils/validate.pipe';
 import { LoginDto } from './users/user.dto';

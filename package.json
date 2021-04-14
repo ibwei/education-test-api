@@ -48,6 +48,8 @@
     "@nestjs/typeorm": "^7.1.5",
     "class-transformer": "^0.4.0",
     "class-validator": "^0.13.1",
+    "csurf": "^1.11.0",
+    "express-rate-limit": "^5.2.6",
     "md5": "^2.3.0",
     "mysql2": "^2.2.5",
     "passport": "^0.4.1",

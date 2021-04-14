@@ -1,4 +1,5 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
+import { Test } from '../test/test.entity';
 
 export enum Sex {
   male = 1,
@@ -55,4 +56,10 @@ export class User {
 
   @Column()
   updated_at: string;
+
+  @OneToMany(
+    () => Test,
+    test => test.user,
+  )
+  test: Test[];
 }
