@@ -1,17 +1,25 @@
-import { Controller, Get, Post, Query, Res, UseGuards } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Res,
+  UseGuards,
+  UsePipes,
+} from '@nestjs/common';
 import { AppService } from './app.service';
 import { AuthService } from './auth/auth.service';
 import { Public } from './auth/jwt-auth.guard';
 import { httpResponse } from './utils/http.helper';
-import { UsersService } from './users/users.service';
 import { AuthGuard } from '@nestjs/passport';
+import { Query } from '@nestjs/common';
+import { ValidationPipe } from './utils/validate.pipe';
+import { LoginDto } from './users/user.dto';
 
 @Controller()
 export class AppController {
   constructor(
     private readonly appService: AppService,
     private authService: AuthService,
-    private userService: UsersService,
   ) {}
 
   @Public()
@@ -21,10 +29,10 @@ export class AppController {
   }
 
   @Public()
-  @UseGuards(AuthGuard('local')) //  这里会先去执行 guards 里面的逻辑
-  @Post('auth/login')
-  async authlogin(@Query() { username, password }, @Res() res) {
-    console.log(`开始执行里面的具体登录逻辑`);
+  @UsePipes(ValidationPipe)
+  // @UseGuards(AuthGuard('local')) //  这里会先去执行 guards 里面的逻辑
+  @Post('user/login')
+  async login(@Query() { username, password }: LoginDto, @Res() res) {
     const userInfo = await this.authService.validateUser(username, password);
     if (userInfo) {
       return httpResponse(res, userInfo, 0, '登录成功');
