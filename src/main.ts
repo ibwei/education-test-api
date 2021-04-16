@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { APP_CONFIG } from './config/app.config';
-import * as csurf from 'csurf';
+// import * as csurf from 'csurf';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import * as rateLimit from 'express-rate-limit';
 
@@ -16,7 +16,7 @@ async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
   app.setGlobalPrefix(APP_CONFIG.ROUTER_PREFIX);
   app.enableCors();
-  app.use(csurf());
+  // app.use(csurf());
   app.use(rateLimit({ windowMx: APP_CONFIG.WINDOW_MS, max: APP_CONFIG.MAX }));
   await app.listen(APP_CONFIG.PORT);
 }
