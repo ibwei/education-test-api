@@ -12,7 +12,6 @@ export class QuestionService {
 
   async getRandomRecordByPartId(partId: number, limit: number) {
     // 先把某个各版块的题目全部拉取出来
-    console.log(partId);
     const entityManager = getManager();
     // 每个板块随机获取五道题
     const res = await entityManager.query(

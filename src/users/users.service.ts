@@ -34,7 +34,6 @@ export class UsersService {
    * @returns {any}
    */
   async findOne(username: string): Promise<User | undefined> {
-    console.log(`username=${username}`);
     return this.usersRepository.findOne({ where: { name: username } });
   }
 
