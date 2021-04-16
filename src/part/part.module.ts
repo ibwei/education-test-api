@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Get, Module } from '@nestjs/common';
 import { PartController } from './part.controller';
 import { PartService } from './part.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
@@ -8,5 +8,6 @@ import { Part } from './part.entity';
   controllers: [PartController],
   providers: [PartService],
   imports: [TypeOrmModule.forFeature([Part])],
+  exports: [PartService],
 })
 export class PartModule {}

@@ -1,11 +1,14 @@
-import { Part } from 'src/part/part.entity';
-import { User } from 'src/users/user.entity';
-import { Entity, Column, PrimaryGeneratedColumn, ManyToOne } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity('test')
 export class Test {
   @PrimaryGeneratedColumn()
   id: number;
+
+  @Column({
+    type: 'tinyint',
+  })
+  user_id: number;
 
   @Column({
     length: 2000,
@@ -56,10 +59,4 @@ export class Test {
 
   @Column()
   updated_at: string;
-
-  @ManyToOne(
-    () => User,
-    user => user.test,
-  )
-  user: User;
 }
